@@ -61,5 +61,9 @@
     .footer-nav {
       flex-direction: column;
     }
+    .footer-copy{
+        width: 90%
+    }
+          
   }
   
