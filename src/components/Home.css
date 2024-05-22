@@ -1,0 +1,82 @@
+.home-section {
+  padding: 80px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.home-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-picture {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.profile-picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.social-media {
+  display: flex;
+  gap: 20px; /* Adjusted spacing */
+}
+
+.small-text {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.large-text {
+  font-size: 36px;
+  font-weight: bold;
+  margin-top: 1px;
+}
+
+.role-text {
+  font-size: 24px;
+  color: #333;
+  margin-top: -26px;
+}
+
+.animated-role {
+  font-size: 30px;
+  display: inline-block;
+  color: #1e90ff;
+}
+
+.social-link {
+  font-size: 24px;
+  color: #333;
+  text-decoration: none;
+  margin-top: -8px;
+  transition: all 0.3s ease;
+}
+
+.social-link i {
+  color: #333;
+}
+
+.social-link i:hover {
+  transform: scale(1.2);
+  color: #1e90ff;
+}
+
+@media (max-width: 768px) {
+  .home-content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
