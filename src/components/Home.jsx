@@ -7,7 +7,7 @@ const Home = () => {
     <section id="home" className="home-section">
       <div className="home-content">
         <div className="profile-picture">
-          <img src="src/assets/profile-picture.png" alt="Profile" />
+          <img src="profile-picture.png" alt="Profile" />
         </div>
         <div className="intro-text">
           <p className="small-text">Hello! My name is</p>
