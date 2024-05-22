@@ -8,7 +8,7 @@ const Projects = () => {
       <div className="project-cards">
         <div className="project-card">
           <div className="project-image">
-            <img src="src/assets/passgenerator.png" alt="Donuts House" />
+            <img src="passgenerator.png" alt="Donuts House" />
           </div>
           <div className="project-details">
             <h3>Random Password Generator</h3>
@@ -23,7 +23,7 @@ const Projects = () => {
 
         <div className="project-card">
           <div className="project-image">
-            <img src="src/assets/bgchanger.png" alt="Business Dashboard" />
+            <img src="bgchanger.png" alt="Business Dashboard" />
           </div>
           <div className="project-details">
             <h3>Background Changer</h3>
@@ -37,7 +37,7 @@ const Projects = () => {
 
         <div className="project-card">
           <div className="project-image">
-            <img src="src/assets/counter.png" alt="Helper Website" />
+            <img src="counter.png" alt="Helper Website" />
           </div>
           <div className="project-details">
             <h3>Simple Counter</h3>
