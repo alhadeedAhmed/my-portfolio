@@ -95,6 +95,9 @@ body {
     .navbar-cv {
         display: none;
     }
+    .navbar-logo img.logo{
+        margin-left: -30px;
+    }
     
     .navbar {
         justify-content: space-between; 
