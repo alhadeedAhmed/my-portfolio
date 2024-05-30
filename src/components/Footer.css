@@ -54,16 +54,12 @@
     background-color: black;
     padding: 20px;
     margin-bottom: 0px;
-    width: 90%;
+    width: 100%;
   }
   
   @media (max-width: 768px) {
     .footer-nav {
       flex-direction: column;
     }
-    .footer-copy{
-        width: 90%
-    }
-          
   }
   
