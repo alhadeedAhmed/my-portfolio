@@ -30,7 +30,7 @@ const Home = () => {
                 cursor={true}
                 repeat={Infinity}
                 style={{
-                  fontSize: "25px",
+                  fontSize: "23px",
                   display: "inline-block",
                   color: "#1e90ff",
                 }}
