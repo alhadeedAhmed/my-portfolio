@@ -19,7 +19,7 @@ const Home = () => {
             <span className="animated-role">
               <TypeAnimation
                 sequence={[
-                  "Web Developer",
+                  "Frontend Developer",
                   2000,
                   "Content Writer",
                   2000,
