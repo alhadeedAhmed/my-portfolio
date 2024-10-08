@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -8,10 +8,23 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
+  const closeMenuOnScroll = () => {
+    if (isOpen) {
+      setIsOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", closeMenuOnScroll);
+    return () => {
+      window.removeEventListener("scroll", closeMenuOnScroll);
+    };
+  }, [isOpen]);
+
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <img src="Logo.png" alt="HS Logo" className="logo" />
+        <img src="src/assets/Logo.png" alt="HS Logo" className="logo" />
       </div>
       <ul className={`navbar-links ${isOpen ? "open" : ""}`}>
         <li>
@@ -29,6 +42,11 @@ const Navbar = () => {
         <li>
           <a href="#contact">Contact</a>
         </li>
+        <li className="navbar-cv-small">
+          <a href="src/assets/ALHADEED.pdf" download>
+            Download CV <i className="bx bx-download"></i>
+          </a>
+        </li>
       </ul>
       <div className="navbar-cv">
         <a href="src/assets/ALHADEED.pdf" download>
@@ -36,7 +54,7 @@ const Navbar = () => {
         </a>
       </div>
       <div className="navbar-toggle" onClick={toggleMenu}>
-        <i className="bx bx-menu"></i>
+        <i className={`bx ${isOpen ? "bx-x" : "bx-menu"}`}></i>
       </div>
     </nav>
   );
