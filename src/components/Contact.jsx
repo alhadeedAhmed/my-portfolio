@@ -18,18 +18,22 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    console.log("Form Data:", formData);
+
     emailjs
       .sendForm(
-        "service_o7639eg",
+        "service_ypu22jb",
         "template_4uox37k",
         e.target,
         "oGzFvTYEaOWTTivir"
       )
       .then(
         (result) => {
+          console.log("Success:", result.text);
           alert("Message Sent Successfully", result.text);
         },
         (error) => {
+          console.error("Error:", error.text);
           alert("An error occurred, Please try again", error.text);
         }
       );
@@ -91,7 +95,7 @@ const Contact = () => {
             onChange={handleChange}
             required
           />
-          <button type="submit">SEND</button>
+          <button type="submit">Send</button>
         </form>
       </div>
     </div>
