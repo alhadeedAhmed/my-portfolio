@@ -49,7 +49,7 @@ const Navbar = () => {
         </li>
       </ul>
       <div className="navbar-cv">
-        <a href="src/assets/ALHADEED.pdf" download>
+        <a href="src/assets/ALHADEED-SUDHEER.pdf" download>
           Download CV <i className="bx bx-download"></i>
         </a>
       </div>
