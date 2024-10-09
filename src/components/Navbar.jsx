@@ -43,7 +43,7 @@ const Navbar = () => {
           <a href="#contact">Contact</a>
         </li>
         <li className="navbar-cv-small">
-          <a href="src/assets/ALHADEED.pdf" download>
+          <a href="src/assets/ALHADEED-SUDHEER.pdf" download>
             Download CV <i className="bx bx-download"></i>
           </a>
         </li>
