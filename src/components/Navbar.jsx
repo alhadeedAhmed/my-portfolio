@@ -18,13 +18,13 @@ const Navbar = () => {
     window.addEventListener("scroll", closeMenuOnScroll);
     return () => {
       window.removeEventListener("scroll", closeMenuOnScroll);
-    };`
+    };
   }, [isOpen]);
 
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <img src=".src/assets/Logo.png" alt="HS Logo" className="logo" />
+        <img src="src/assets/Logo.png" alt="HS Logo" className="logo" />
       </div>
       <ul className={`navbar-links ${isOpen ? "open" : ""}`}>
         <li>
